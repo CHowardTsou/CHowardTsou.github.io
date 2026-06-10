@@ -244,22 +244,9 @@
           <span class="tech-tag">CVL</span>
           <span class="tech-tag">Solidity</span>
         </div>
-        <p>Comprehensive formal verification work across Ethernaut challenges and Speedrun Ethereum protocols. Includes 8 vulnerability proofs and 3+ protocol hardening specs (CrowdFunding, Token Vendor, DEX) with state machine analysis, accounting invariants, and edge case detection.</p>
+        <p>Comprehensive formal verification work across Ethernaut challenges and Speedrun Ethereum protocols. Includes 8 vulnerability proofs and 6 protocol hardening suites (CrowdFunding, Token Vendor, DEX, and a three-part oracle trilogy) covering state machine analysis, accounting invariants, mutation testing, and invariant pyramid design.</p>
         <div class="project-links">
           <a href="https://github.com/CHowardTsou/FV-Security-Audit-Portfolio" target="_blank">View on GitHub →</a>
-        </div>
-      </div>
-
-      <div class="project">
-        <h3>Oracle Formal Verification (In Progress)</h3>
-        <div class="tech-tags">
-          <span class="tech-tag">Certora</span>
-          <span class="tech-tag">Protocol Design</span>
-          <span class="tech-tag">Speedrun Ethereum</span>
-        </div>
-        <p>Building formal verification spec for oracle protocol based on Speedrun Ethereum challenge. Focus on price accuracy bounds, pool invariants, and state machine properties for data feed safety.</p>
-        <div class="project-links">
-          <a href="https://github.com/CHowardTsou/FV-Security-Audit-Portfolio/tree/main/02-Speedrun-Ethereum-Hardening" target="_blank">Speedrun Directory →</a>
         </div>
       </div>
     </section>
@@ -268,15 +255,41 @@
       <h2>Writing</h2>
       
       <div class="project">
-        <h3>Formal Verification of a Whitelist Oracle: Proving Correctness with Certora</h3>
+        <h3>Formal Verification of a Whitelist Oracle — Proving Correctness with Certora</h3>
         <div class="tech-tags">
           <span class="tech-tag">Certora Prover</span>
           <span class="tech-tag">Formal Verification</span>
           <span class="tech-tag">Oracle</span>
         </div>
-        <p>Formal verification of a whitelist oracle protocol. Proves data feed integrity, state machine correctness, and access control enforcement. Shows how FV systematically verifies that only authorized sources can update price data.</p>
+        <p>Part 1 of the oracle trilogy. Verifies data feed integrity, staleness filtering, median correctness, and access control on a trust-based whitelist aggregator. Introduces ghost arrays and quantified invariants over dynamic storage.</p>
         <div class="project-links">
           <a href="https://medium.com/@chinhaotsou_54090/formal-verification-of-a-whitelist-oracle-proving-correctness-with-certora-a0a3fca0da71" target="_blank">Read on Medium →</a>
+        </div>
+      </div>
+
+      <div class="project">
+        <h3>Formal Verification of a Staking Oracle — Certora Prover Continued</h3>
+        <div class="tech-tags">
+          <span class="tech-tag">Certora Prover</span>
+          <span class="tech-tag">Formal Verification</span>
+          <span class="tech-tag">Oracle</span>
+        </div>
+        <p>Part 2 of the oracle trilogy. Verifies an economic-incentive oracle with staking, slashing, bucket-based median reporting, and reward claiming. Covers token accounting with ghost variables, state machine transitions, and mutation testing.</p>
+        <div class="project-links">
+          <a href="https://medium.com/@chinhaotsou_54090/formal-verification-of-a-staking-oracle-certora-prover-continued-59e564ab2ff6" target="_blank">Read on Medium →</a>
+        </div>
+      </div>
+
+      <div class="project">
+        <h3>Formal Verification of an Optimistic Oracle — Certora Prover: The Final Oracle</h3>
+        <div class="tech-tags">
+          <span class="tech-tag">Certora Prover</span>
+          <span class="tech-tag">Formal Verification</span>
+          <span class="tech-tag">Oracle</span>
+        </div>
+        <p>Part 3 of the oracle trilogy. Verifies a UMA-inspired dispute-based oracle across six spec families: state machine terminal fields, bond invariant pyramid, three-path accounting, access control, and timing windows. 5/5 mutation kill rate.</p>
+        <div class="project-links">
+          <a href="https://medium.com/@chinhaotsou_54090/formal-verification-of-an-optimistic-oracle-certora-prover-the-final-oracle-ed1671f9d3f1" target="_blank">Read on Medium →</a>
         </div>
       </div>
 
@@ -308,8 +321,9 @@
     </div>
 
     <footer>
-      <p>Built with care. Last updated April 2026.</p>
+      <p>Built with care. Last updated June 2026.</p>
     </footer>
   </div>
 </body>
 </html>
+
